@@ -1,26 +1,63 @@
-#include<stdio.h>
+//Basilio Figueroa Miguel Angel
 
-void imprimir(int,int);
-int main(){
+#include <stdio.h>
+
+int recursividad(int);
+
+int ra=3;
+
+int re;
+
+
+int main()
 	
-	int inicio,fin;
-	printf("Ingresar el inicio\n");
-	scanf("%d",&inicio);
+{
 	
-	printf("\nIngresaaar 150\n");
+	int i;
 	
-	printf("\nIngresar el final\n");
-	scanf("%d",&fin);
+	int Ini=5;
 	
-	imprimir(inicio, fin);
+	int Ele;
+	
+	printf("Ingrese el numero de la secuencia: ");
+	
+	scanf("%d",&Ele);  
+	
+	printf("\n");
+	
+	for(i=1; i<=Ele; i++)
+		
+	{
+		
+		printf("%d, ",Ini,recursividad(Ini));
+		
+		Ini=re;
+		
+	}
+	
 	return 0;
 	
 }
-void imprimir(int ini, int fin){
-	if(ini < fin){
-		printf("%d ",ini);
-		ini=ini*3;
-		imprimir(ini,fin);
-	}
 
- }
+int recursividad(int Ini)
+	
+{
+	
+	
+	if(Ini>0)
+		
+	{
+		
+		return resultado=Ini*ra;
+		
+	}
+	
+	else
+	   
+	{
+		
+		return 1;    
+		
+	}
+	
+}
